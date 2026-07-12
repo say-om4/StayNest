@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost/PG-Life/backend/api",
+  baseURL: "https://saypglife.free.nf/backend/api",
   headers: {
     "Content-Type": "application/json",
   },
