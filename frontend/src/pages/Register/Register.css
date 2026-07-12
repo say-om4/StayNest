@@ -1,0 +1,6 @@
+.register-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:#f5f7ff;
+}

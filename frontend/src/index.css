@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary:#2563eb;
+    --secondary:#4f46e5;
+    --background:#f5f7ff;
+    --text:#1f2937;
+    --white:#ffffff;
+    --glass:rgba(255,255,255,0.18);
+    --border:rgba(255,255,255,0.30);
+    --shadow:0 8px 32px rgba(31,38,135,0.15);
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--background);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}

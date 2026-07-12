@@ -1,0 +1,50 @@
+.search-section{
+    padding:40px 0;
+}
+
+.search-card{
+    display:flex;
+    gap:15px;
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(15px);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.search-card input,
+.search-card select{
+    flex:1;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+@media(max-width:768px){
+    .search-card{
+        flex-direction:column;
+    }
+}
+
+.search-card button{
+    white-space:nowrap;
+}
+
+@media(max-width:576px){
+
+.search-section{
+    padding:25px 15px;
+}
+
+.search-card{
+    padding:15px;
+}
+
+.search-card input,
+.search-card select,
+.search-card button{
+    width:100%;
+}
+
+}

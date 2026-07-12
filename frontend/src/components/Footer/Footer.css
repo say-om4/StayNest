@@ -1,0 +1,22 @@
+.footer{
+    background:#111827;
+    color:white;
+    padding:50px 0;
+    margin-top:60px;
+}
+
+.footer h4{
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.footer p{
+    color:#d1d5db;
+    margin:5px 0;
+}
+
+.footer hr{
+    border-color:#374151;
+    margin:20px auto;
+    width:60%;
+}

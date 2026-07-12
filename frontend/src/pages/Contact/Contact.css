@@ -1,0 +1,33 @@
+.contact-page{
+    min-height:100vh;
+    background:#f8fafc;
+    padding:80px 0;
+}
+
+.contact-page h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:700;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.contact-box button{
+    width:100%;
+}
