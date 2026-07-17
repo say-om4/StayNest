@@ -39,9 +39,6 @@ CREATE TABLE `bookings` (
 -- Dumping data for table `bookings`
 --
 
-INSERT INTO `bookings` (`id`, `user_id`, `pg_id`, `booking_date`, `status`) VALUES
-(1, 1, 3, '2026-07-11 14:58:42', 'Pending');
-
 -- --------------------------------------------------------
 
 --
@@ -78,12 +75,6 @@ CREATE TABLE `pgs` (
 -- Dumping data for table `pgs`
 --
 
-INSERT INTO `pgs` (`id`, `user_id`, `name`, `city`, `address`, `price`, `rating`, `room_type`, `gender`, `food`, `wifi`, `bathroom`, `parking`, `power_backup`, `image`, `description`, `status`, `property_type`, `created_at`) VALUES
-(1, NULL, 'Sunrise PG', 'Delhi', 'Laxmi Nagar, Delhi', 7500.00, 4.8, 'Single Sharing', 'Boys', 1, 1, 'Attached', 1, 1, 'pg1.jpg', 'A premium boys PG with modern rooms, healthy food, high-speed WiFi and excellent security.', 'Vacant', 'PG', '2026-07-11 13:25:36'),
-(2, NULL, 'Royal Stay PG', 'Bangalore', 'BTM Layout, Bangalore', 6000.00, 4.7, 'Double Sharing', 'Girls', 1, 0, 'Attached', 0, 1, 'pg2.jpg', 'Comfortable girls PG with spacious rooms, daily housekeeping and delicious meals.', 'Vacant', 'PG', '2026-07-11 13:25:36'),
-(3, NULL, 'Green Nest PG', 'Pune', 'Hinjewadi, Pune', 7200.00, 4.7, 'Triple Sharing', 'Unisex', 1, 1, 'Common', 1, 1, 'pg3.jpg', 'Affordable unisex PG near IT park with modern facilities and a friendly environment.', 'Vacant', 'PG', '2026-07-11 13:25:36'),
-(5, NULL, 'Apna pg', 'Dehradun', 'premnagar kehrigaon', 7000.00, 4.9, 'Double Sharing', 'Boys', 1, 1, 'Attached', 1, 1, '1783869451_pg4.jpg.jpg', 'free wifi electricity include parking ', 'Vacant', 'PG', '2026-07-12 15:17:31');
-
 -- --------------------------------------------------------
 
 --
@@ -103,10 +94,6 @@ CREATE TABLE `users` (
 --
 -- Dumping data for table `users`
 --
-
-INSERT INTO `users` (`id`, `full_name`, `email`, `phone`, `password`, `created_at`, `role`) VALUES
-(1, 'akshay', 'gamerakki559811@gmail.com', '7865890432', '$2y$10$xcRT1U64suwxCxyt6Mlz6uPA2EX1LlnDdYEBGDN/sD4X.59khZity', '2026-07-11 13:50:46', 'user'),
-(2, 'Om', 'omjeexig@gmail.com', '8679389489', '$2y$10$x9RZkbZFWcHAlB6xkEbOfOU6R.T2j8unkZhLIbCTeWhzrWYYqXfUC', '2026-07-11 20:27:29', 'admin');
 
 -- --------------------------------------------------------
 

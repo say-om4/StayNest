@@ -15,10 +15,7 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Seed Admin user (Omjee with SayOm@357)
-INSERT INTO users (id, full_name, email, phone, password, role) VALUES 
-(2, 'Om', 'omjeexig@gmail.com', '8679389489', '$2y$10$x9RZkbZFWcHAlB6xkEbOfOU6R.T2j8unkZhLIbCTeWhzrWYYqXfUC', 'admin')
-ON DUPLICATE KEY UPDATE role='admin';
+-- Admin user will be created during registration
 
 -- ===========================
 -- PGS TABLE
@@ -44,6 +41,9 @@ CREATE TABLE pgs (
     description TEXT,
     status ENUM('Vacant', 'Full') NOT NULL DEFAULT 'Vacant',
     property_type ENUM('PG', 'Room', 'Apartment', 'Hostel') NOT NULL DEFAULT 'PG',
+    rating_setting ENUM('reviews', 'admin') NOT NULL DEFAULT 'reviews',
+    contact_display ENUM('both', 'email', 'phone') NOT NULL DEFAULT 'both',
+    phone2 VARCHAR(15) DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
